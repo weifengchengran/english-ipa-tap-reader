@@ -1,0 +1,8 @@
+# 中间产物 / 开发数据（无需入库）
+words_audio_map.json
+__pycache__/
+*.pyc
+
+# 系统文件
+Thumbs.db
+.DS_Store

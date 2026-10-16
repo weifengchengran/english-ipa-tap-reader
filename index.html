@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音标点读 · English IPA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">ə</div>
+      <div class="header-text">
+        <h1 id="app-title">音标点读</h1>
+        <p class="subtitle" id="app-subtitle">点击音标听发音 · 点击示例词听单词</p>
+      </div>
+      <div class="header-actions">
+        <div class="stats">
+          <span class="stat"><b>48</b> <span id="stat-sounds">音标</span></span>
+          <span class="dot">·</span>
+          <span class="stat"><b>48</b> <span id="stat-words">例词</span></span>
+        </div>
+        <div class="lang-switch" role="group" aria-label="语言 / Language">
+          <button type="button" class="lang-btn" data-lang="zh">中文</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="ja">日本語</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav id="nav" class="nav" aria-label="分类导航"></nav>
+
+  <main id="app" class="app">
+    <p class="loading" id="loading">加载中…</p>
+  </main>
+
+  <footer class="footer">
+    <span id="app-footer">音标发音 &amp; 示例词发音：Sounds American（美音真人朗读）</span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
